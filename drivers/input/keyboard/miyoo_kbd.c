@@ -378,7 +378,7 @@ static void scan_handler(unsigned long unused)
               val|= MY_TB;
           }
           if(gpio_get_value(IN_PA1) == 1){
-              val|= MY_B;
+              val|= MY_TA;
           }
 
           gpio_direction_input(IN_3);
@@ -390,10 +390,10 @@ static void scan_handler(unsigned long unused)
               val|= MY_RIGHT;
           }
           if(gpio_get_value(IN_A_M3) == 1){
-              val|= MY_TA;
+              val|= MY_A;
           }
           if(gpio_get_value(IN_PA1) == 1){
-              val|= MY_A;
+              val|= MY_B;
           }
 
           gpio_direction_input(IN_4);
